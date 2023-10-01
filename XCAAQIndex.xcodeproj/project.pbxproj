@@ -11,6 +11,10 @@
 		8B2AE5432AC9227D009F14A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AE5422AC9227D009F14A6 /* ContentView.swift */; };
 		8B2AE5452AC9227E009F14A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2AE5442AC9227E009F14A6 /* Assets.xcassets */; };
 		8B2AE5482AC9227E009F14A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B2AE5472AC9227E009F14A6 /* Preview Assets.xcassets */; };
+		8B2AE5502AC922CC009F14A6 /* XCAAQI in Frameworks */ = {isa = PBXBuildFile; productRef = 8B2AE54F2AC922CC009F14A6 /* XCAAQI */; };
+		8B2AE5522AC9270B009F14A6 /* AppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AE5512AC9270B009F14A6 /* AppViewModel.swift */; };
+		8B2AE5542AC92D64009F14A6 /* CoordinatesFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AE5532AC92D64009F14A6 /* CoordinatesFinder.swift */; };
+		8B2AE5562AC92FD9009F14A6 /* CircleAQIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B2AE5552AC92FD9009F14A6 /* CircleAQIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,9 @@
 		8B2AE5422AC9227D009F14A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B2AE5442AC9227E009F14A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B2AE5472AC9227E009F14A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B2AE5512AC9270B009F14A6 /* AppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewModel.swift; sourceTree = "<group>"; };
+		8B2AE5532AC92D64009F14A6 /* CoordinatesFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesFinder.swift; sourceTree = "<group>"; };
+		8B2AE5552AC92FD9009F14A6 /* CircleAQIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleAQIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B2AE5502AC922CC009F14A6 /* XCAAQI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,8 +61,11 @@
 			children = (
 				8B2AE5402AC9227D009F14A6 /* XCAAQIndexApp.swift */,
 				8B2AE5422AC9227D009F14A6 /* ContentView.swift */,
+				8B2AE5552AC92FD9009F14A6 /* CircleAQIView.swift */,
 				8B2AE5442AC9227E009F14A6 /* Assets.xcassets */,
 				8B2AE5462AC9227E009F14A6 /* Preview Content */,
+				8B2AE5512AC9270B009F14A6 /* AppViewModel.swift */,
+				8B2AE5532AC92D64009F14A6 /* CoordinatesFinder.swift */,
 			);
 			path = XCAAQIndex;
 			sourceTree = "<group>";
@@ -83,6 +94,9 @@
 			dependencies = (
 			);
 			name = XCAAQIndex;
+			packageProductDependencies = (
+				8B2AE54F2AC922CC009F14A6 /* XCAAQI */,
+			);
 			productName = XCAAQIndex;
 			productReference = 8B2AE53D2AC9227D009F14A6 /* XCAAQIndex.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +125,9 @@
 				Base,
 			);
 			mainGroup = 8B2AE5342AC9227D009F14A6;
+			packageReferences = (
+				8B2AE54E2AC922CC009F14A6 /* XCRemoteSwiftPackageReference "XCAAQI" */,
+			);
 			productRefGroup = 8B2AE53E2AC9227D009F14A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +155,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B2AE5432AC9227D009F14A6 /* ContentView.swift in Sources */,
+				8B2AE5542AC92D64009F14A6 /* CoordinatesFinder.swift in Sources */,
 				8B2AE5412AC9227D009F14A6 /* XCAAQIndexApp.swift in Sources */,
+				8B2AE5522AC9270B009F14A6 /* AppViewModel.swift in Sources */,
+				8B2AE5562AC92FD9009F14A6 /* CircleAQIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +295,7 @@
 				DEVELOPMENT_TEAM = 5C2XD9H2JS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app wants to show AQ conditions around your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +325,7 @@
 				DEVELOPMENT_TEAM = 5C2XD9H2JS;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "The app wants to show AQ conditions around your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8B2AE54E2AC922CC009F14A6 /* XCRemoteSwiftPackageReference "XCAAQI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alfianlosari/XCAAQI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8B2AE54F2AC922CC009F14A6 /* XCAAQI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8B2AE54E2AC922CC009F14A6 /* XCRemoteSwiftPackageReference "XCAAQI" */;
+			productName = XCAAQI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8B2AE5352AC9227D009F14A6 /* Project object */;
 }
